@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tablo Örneği</title>
+  <style>
+    /* Genel sayfa düzeni */
+    body{
+      font-family: "Times New Roman", Georgia, serif;
+      background:#ffffff;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      padding:40px;
+    }
+
+    /* Dış çerçeve (kırmızı kenarlık) */
+    .card{
+      border:10px solid #d31b1b; /* kalın kırmızı */
+      width:400px;
+      padding:18px;
+      box-sizing:border-box;
+      text-align:center;
+    }
+
+    /* Başlık */
+    .title{
+      font-size:28px;
+      line-height:0.95;
+      font-weight:700;
+      letter-spacing:2px;
+      margin:0 0 14px;
+    }
+
+    /* İç tablo stilizayonu */
+    .grid{
+      display:inline-block;
+      border:4px solid #d31b1b; /* iç kırmızı çerçeve */
+      padding:6px;
+      background:transparent;
+    }
+
+    table{
+      border-collapse:collapse;
+      width:320px;
+    }
+
+    th, td{
+      border:4px solid #d31b1b; /* hücre kenarlıkları kırmızı */
+      padding:14px 8px;
+      background:#ffd93b; /* sarı hücre rengi */
+      font-size:22px;
+    }
+
+    th{
+      font-weight:800;
+    }
+
+    /* Alt yazı */
+    .footer{
+      margin-top:14px;
+      font-size:28px;
+      font-weight:700;
+      letter-spacing:2px;
+    }
+
+    /* Küçük ekranlarda tablo genişlesin/küçülsün */
+    @media (max-width:420px){
+      .card{ width:92%; }
+      table{ width:100%; }
+      th, td{ padding:10px; font-size:18px; }
+      .title{ font-size:22px; }
+      .footer{ font-size:22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Örnek tablo kutusu">
+    <h1 class="title">BURASI<br>TABLONUN<br>BAŞLIĞIDIR</h1>
+
+    <div class="grid" aria-hidden="false">
+      <table role="table" aria-label="İki sütunlu örnek tablo">
+        <thead>
+          <tr>
+            <th scope="col">1.&nbsp;sütun</th>
+            <th scope="col">2.&nbsp;sütun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.1</td>
+            <td>1.2</td>
+          </tr>
+          <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">ALT YAZI</div>
+  </div>
+</body>
+</html>
