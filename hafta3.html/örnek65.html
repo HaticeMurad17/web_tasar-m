@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kayıt Formu</title>
+</head>
+<body>
+
+    <form action="/submit-form.php" method="post">
+    
+      <h2>Kişisel Bilgiler</h2>
+      
+      <label for="fname">Adınız:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br><br>
+      
+      <label for="lname">Soyadınız:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    
+      <h2>Hesap Bilgileri</h2>
+    
+      <label for="email">E-posta:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+    
+      <label for="password">Şifre:</label><br>
+      <input type="password" id="password" name="password"><br><br>
+    
+      <h2>Tercihler</h2>
+    
+      <p>En sevdiğiniz meyve nedir?</p>
+      <input type="checkbox" id="fruit1" name="fruit1" value="Apple">
+      <label for="fruit1"> Elma</label><br>
+      <input type="checkbox" id="fruit2" name="fruit2" value="Orange">
+      <label for="fruit2"> Portakal</label><br>
+      <input type="checkbox" id="fruit3" name="fruit3" value="Grape">
+      <label for="fruit3"> Üzüm</label><br><br>
+    
+      <p>Cinsiyetiniz:</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male"> Erkek</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female"> Kadın</label><br><br>
+    
+      <h2>Mesajınız</h2>
+      <textarea name="message" rows="5" cols="40">Mesajınızı buraya yazın...</textarea><br><br>
+    
+      <input type="submit" value="Gönder">
+    
+    </form>
+
+</body>
+</html>

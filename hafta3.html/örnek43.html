@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Absolute Image Örneği</title>
+  <style>
+    img {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+      width: 200px;
+      height: auto;
+    }
+    div {
+      position: relative;
+      margin: 50px;
+      padding: 20px;
+      background-color: lightyellow;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://via.placeholder.com/200" alt="Arka Plan Resmi">
+  <div>
+    Bu metin resmin **üstünde** görünür çünkü resim z-index:-1 ile arka plana gönderildi.
+  </div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Liste öğelerini yan yana dizmek için sola hizala */
+li {
+  float: left;
+}
+
+/* Bağlantı elemanını blok elemente dönüştür ve sabit genişlik ver */
+a {
+  display: block;
+  width: 60px;
+  text-align: center; /* Metni ortala */
+  padding: 10px; /* Kenar boşluğu ekle */
+  background-color: lightblue; /* Arka plan rengi ver */
+  border: 1px solid blue; /* Kenarlık ekle */
+}
+
+/* Liste maddelerini stilize et (isteğe bağlı) */
+ul {
+  list-style-type: none; /* Madde işaretlerini kaldır */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* float sorununu gidermek için */
+}
+</style>
+</head>
+<body>
+
+<h2>Yatay Navigasyon Menüsü</h2>
+<p>Bu örnek, liste öğelerini yatay olarak sıralamak ve bağlantı butonlarına sabit bir boyut vermek için CSS'in nasıl kullanıldığını gösterir.</p>
+
+<nav>
+  <ul>
+    <li><a href="#anasayfa">Anasayfa</a></li>
+    <li><a href="#hakkimizda">Hakkımızda</a></li>
+    <li><a href="#hizmetler">Hizmetler</a></li>
+    <li><a href="#iletisim">İletişim</a></li>
+  </ul>
+</nav>
+
+</body>
+</html>

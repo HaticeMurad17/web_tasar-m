@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clear Örneği</title>
+  <style>
+    .thumbnail {
+      float: left;
+      width: 100px;
+      height: 80px;
+      margin: 5px;
+      background-color: lightblue;
+    }
+
+    .text_line {
+      clear: both; /* Float'ların altına geç */
+      background-color: lightgreen;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="thumbnail"></div>
+  <div class="thumbnail"></div>
+  <div class="thumbnail"></div>
+
+  <div class="text_line">
+    Bu metin float edilmiş kutuların **altına** geldi.
+  </div>
+</body>
+</html>

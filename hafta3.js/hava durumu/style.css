@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.weather-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f1f1f1;
+  font-size: 18px;
+}
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Etkileşimli Galeri</title>
+<style>
+/* Resimlerin kapsayıcı kutusu */
+div.img {
+  margin: 2px;
+  border: 1px solid #0000ff;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+}
+
+/* Kapsayıcı içindeki resimlere stil verme */
+div.img img {
+  display: inline;
+  margin: 3px;
+  border: 1px solid #ffffff;
+}
+
+/* Fareyle üzerine gelindiğinde kenarlığın rengini değiştirme */
+div.img a:hover img {
+  border: 1px solid #0000ff;
+}
+
+/* Açıklama metni kutusu */
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 2px;
+  height: 100px; /* Sabit yükseklik */
+  overflow: auto; /* Metin taşarsa kaydırma çubuğu ekle */
+}
+
+/* Tüm resimlere varsayılan olarak saydamlık ekleme */
+img {
+  opacity: 0.4;
+  /* IE8 ve öncesi için eski kod */
+  filter: alpha(opacity=40);
+  /* Efektin yumuşak olması için geçiş efekti */
+  transition: opacity 0.5s ease;
+}
+
+/* Fareyle üzerine gelindiğinde resmin saydamlığını kaldırma */
+img:hover {
+  opacity: 1.0;
+  /* IE8 ve öncesi için eski kod */
+  filter: alpha(opacity=100);
+}
+</style>
+</head>
+<body>
+
+<h2>Etkileşimli BMW Galerisi</h2>
+<p>Fotoğrafların üzerine fareyle gelerek efekti deneyin.</p>
+
+<div class="img">
+  <a target="_blank" href="https://st3.depositphotos.com/1012492/18335/i/950/depositphotos_183354786-stock-photo-car-bmw-3-series-german.jpg">
+    <img src="https://st3.depositphotos.com/1012492/18335/i/950/depositphotos_183354786-stock-photo-car-bmw-3-series-german.jpg" alt="bmw" width="110" height="90">
+  </a>
+  <div class="desc">Bayerische Motoren Werke AG (Türkçe: Bavyera Motor Fabrikaları Anonim Şirketi) genellikle anılan kısaltmasıyla BMW, 1916 yılında kurulan Alman otomobil, motosiklet, motor ve bisiklet üreticisidir. BMW ayrıca, Mini ve Rolls-Royce, otomobil şirketlerinin sahibidir.</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://st2.depositphotos.com/17539056/42055/i/450/depositphotos_420555318-stock-photo-bmw-logo-black-background.jpg">
+    <img src="https://st2.depositphotos.com/17539056/42055/i/450/depositphotos_420555318-stock-photo-bmw-logo-black-background.jpg" alt="bmw" width="110" height="90">
+  </a>
+  <div class="desc">Şirketin sloganı ve resmî kurumsal dili İngilizcedir. Sloganı 'Sheer Driving Pleasure' (Gerçek Sürüş Keyfi). Bu sloganla, ünlü Alman teknolojisini ve Ar-Ge'deki kendine güveni vurgulamaktadır.</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://st3.depositphotos.com/1606977/14476/i/450/depositphotos_144765189-stock-photo-kyiv-ukraine-march-4th-2017.jpg">
+    <img src="https://st3.depositphotos.com/1606977/14476/i/450/depositphotos_144765189-stock-photo-kyiv-ukraine-march-4th-2017.jpg" alt="bmw" width="110" height="90">
+  </a>
+  <div class="desc">Şirket, 1913 yılında Karl Friedrich Rapp tarafından Almanya'nın Münih kentinde kurulmuştur. İlk zamanlarda sadece uçak motoru üreten şirket, 1928 yılında satın aldığı otomobil şirketinden sonra otomobil üretimine girmiştir.</div>
+</div>
+
+<div class="img">
+  <a target="_blank" href="https://st3.depositphotos.com/7484148/16526/i/450/depositphotos_165265920-stock-photo-bangkok-thailand-august-11-2017.jpg">
+    <img src="https://st3.depositphotos.com/7484148/16526/i/450/depositphotos_165265920-stock-photo-bangkok-thailand-august-11-2017.jpg" alt="bmw" width="110" height="90">
+  </a>
+  <div class="desc">Bugün BMW Group yalnızca BMW’den daha fazlasıdır. Marka, dört önemli marka sayesinde hem gelişiyor hem de giderek daha fazla prestij kazanıyor: BMW, MINI, Rolls-Royce ve BMW Motorrad.</div>
+</div>
+
+</body>
+</html>

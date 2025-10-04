@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5fa, #2980b9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cursor-car {
+  position: absolute;
+  width: 60px;   /* araba boyutu */
+  height: 60px;
+  pointer-events: none; /* fareyi engellemesin */
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+h1 { margin-bottom: 10px; }
+p { margin-bottom: 50px; }
+
